@@ -3,6 +3,19 @@ import runEngine from '../index.js';
 
 const rules = 'What is the result of the expression?';
 
+const expression = (operator, randomNum1, randomNum2) => {
+  switch (operator) {
+    case '*':
+      return String(randomNum1 * randomNum2);
+    case '+':
+      return String(randomNum1 + randomNum2);
+    case '-':
+      return String(randomNum1 - randomNum2);
+    default:
+      return '0';
+  }
+};
+
 const generateRound = () => {
   const arrayOfOperations = ['*', '+', '-'];
 
@@ -11,21 +24,7 @@ const generateRound = () => {
   const randomNum2 = getRandomInRange(1, 30);
 
   const question = `${randomNum1} ${operator} ${randomNum2}`;
-
-  let answer = '';
-  switch (operator) {
-    case '*':
-      answer = String(randomNum1 * randomNum2);
-      break;
-    case '+':
-      answer = String(randomNum1 + randomNum2);
-      break;
-    case '-':
-      answer = String(randomNum1 - randomNum2);
-      break;
-    default:
-      answer = '0';
-  }
+  const answer = expression(operator, randomNum1, randomNum2);
 
   return [question, answer];
 };

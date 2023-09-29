@@ -7,18 +7,17 @@ const engine = (rules, generateRound) => {
   const gamerName = greeting();
   console.log(rules);
 
-  // eslint-disable-next-line no-plusplus
-  for (let i = 0; i < roundsCount; i++) {
+  for (let i = 0; i < roundsCount; i += 1) {
     const [question, answer] = generateRound();
     console.log(`Question: ${question}`);
     const gamerAnswer = readlineSync.question('Your answer: ');
 
-    if (gamerAnswer === answer) {
-      console.log('Correct!');
-    } else {
-      console.log(`'${gamerAnswer}' is wrong answer ;(. Correct answer was '${answer}'.\nLet's try again, ${gamerName}!`);
+    if (gamerAnswer !== answer) {
+      console.log(`'${gamerAnswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
+      console.log(`Let's try again, ${gamerName}!`);
       return;
     }
+    console.log('Correct!');
   }
 
   console.log(`Congratulations, ${gamerName}!`);
