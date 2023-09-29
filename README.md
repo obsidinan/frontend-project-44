@@ -41,22 +41,22 @@
 
 ## Как играть:
 
-#### 1. Проверка на четность ([Brain Even game](https://asciinema.org/a/610394)) [![asciicast](https://asciinema.org/a/610394.svg)](https://asciinema.org/a/610394)
+#### 1. Проверка на четность (Brain Even game) [![asciicast](https://asciinema.org/a/610394.svg)](https://asciinema.org/a/610394)
    В этой игре необходимо проверить число на четность: если число четное, введите "yes", если нечетное - "no".  
    Для запуска игры введите в терминале команду **"brain-even"**
 
-#### 2. Калькулятор ([Brain Calc game](https://asciinema.org/a/610393))
+#### 2. Калькулятор (Brain Calc game) [![asciicast](https://asciinema.org/a/610393.svg)](https://asciinema.org/a/610393)
    В этой игре будут даны два числа с разными операциями: сложение, вычитание или умножение. Необходимо ввести результат выражения.  
    Для запуска игры введите в терминале команду **"brain-calc"**
 
-#### 3. НОД ([Brain GCD game](https://asciinema.org/a/610398))
+#### 3. НОД (Brain GCD game) [![asciicast](https://asciinema.org/a/610398.svg)](https://asciinema.org/a/610398)
    В данной игре Вам необходимо найти наибольший общий делитель двух чисел.  
    Для запуска игры введите в терминале команду **"brain-gcd"**
 
-#### 4. Арифметическая прогрессия ([Brain Progression game](https://asciinema.org/a/610392))
+#### 4. Арифметическая прогрессия (Brain Progression game) [![asciicast](https://asciinema.org/a/610392.svg)](https://asciinema.org/a/610392)
    В этой игре Вам будет дана арифметическая прогрессия, в которой одно число будет пропущено. Введите это число.  
    Для запуска игры введите в терминале команду **"brain-progression"**
 
-#### 5. Простое ли число? ([Brain Prime game](https://asciinema.org/a/610396))
+#### 5. Простое ли число? (Brain Prime game) [![asciicast](https://asciinema.org/a/610396.svg)](https://asciinema.org/a/610396)
    В данной игре необходимо узнать, простое ли число.  
    Для запуска игры введите в терминале команду **"brain-prime"**
