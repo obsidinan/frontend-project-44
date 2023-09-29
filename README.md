@@ -41,7 +41,7 @@
 
 ## Как играть:
 
-#### 1. Проверка на четность ([Brain Even game](https://asciinema.org/a/610394))
+#### 1. Проверка на четность ([Brain Even game](https://asciinema.org/a/610394)) [![asciicast](https://asciinema.org/a/610394.svg)](https://asciinema.org/a/610394)
    В этой игре необходимо проверить число на четность: если число четное, введите "yes", если нечетное - "no".  
    Для запуска игры введите в терминале команду **"brain-even"**
 
