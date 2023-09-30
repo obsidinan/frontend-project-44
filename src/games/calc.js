@@ -3,14 +3,14 @@ import runEngine from '../index.js';
 
 const rules = 'What is the result of the expression?';
 
-const expression = (operator, randomNum1, randomNum2) => {
+const expression = (operator, number1, number2) => {
   switch (operator) {
     case '*':
-      return String(randomNum1 * randomNum2);
+      return String(number1 * number2);
     case '+':
-      return String(randomNum1 + randomNum2);
+      return String(number1 + number2);
     case '-':
-      return String(randomNum1 - randomNum2);
+      return String(number1 - number2);
     default:
       return '0';
   }

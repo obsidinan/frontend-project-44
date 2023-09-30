@@ -11,11 +11,8 @@ const isPrime = (number) => {
     return true;
   }
 
-  let i = 1;
   const end = Math.sqrt(number);
-
-  while (i <= end) {
-    i += 1;
+  for (let i = 1; i <= end; i += 1) {
     if (number % i === 0) {
       return false;
     }
