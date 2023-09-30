@@ -4,15 +4,12 @@ import runEngine from '../index.js';
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
-  if (number === 1) {
+  if (number < 2) {
     return false;
-  }
-  if (number === 2) {
-    return true;
   }
 
   const end = Math.sqrt(number);
-  for (let i = 1; i <= end; i += 1) {
+  for (let i = 2; i <= end; i += 1) {
     if (number % i === 0) {
       return false;
     }
@@ -22,7 +19,7 @@ const isPrime = (number) => {
 };
 
 const generateRound = () => {
-  const number = getRandomInRange(1, 50);
+  const number = getRandomInRange(2, 2);
   const question = number;
   const answer = isPrime(number) ? 'yes' : 'no';
 
