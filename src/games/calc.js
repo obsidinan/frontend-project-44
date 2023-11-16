@@ -16,10 +16,14 @@ const expression = (operator, number1, number2) => {
   }
 };
 
-const generateRound = () => {
+const getOperator = () => {
   const arrayOfOperations = ['*', '+', '-'];
-
   const operator = arrayOfOperations[getRandomInRange(0, 2)];
+  return operator;
+};
+
+const generateRound = () => {
+  const operator = getOperator();
   const randomNum1 = getRandomInRange(1, 30);
   const randomNum2 = getRandomInRange(1, 30);
 

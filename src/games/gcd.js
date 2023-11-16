@@ -5,15 +5,10 @@ import runEngine from '../index.js';
 const rules = 'Find the greatest common divisor of given numbers.';
 
 const findGcd = (a, b) => {
-  while (a !== b) {
-    if (a > b) {
-      a -= b;
-    } else {
-      b -= a;
-    }
+  if (!b) {
+    return a;
   }
-
-  return a;
+  return findGcd(b, a % b);
 };
 
 const generateRound = () => {
