@@ -4,12 +4,12 @@ import runEngine from '../index.js';
 const rules = 'What number is missing in the progression?';
 
 const getProgression = (startOfProgression, lengthOfProgression, stepOfProgression) => {
-  const arrayOfProgression = [];
+  const progression = [];
   for (let i = 0; i < lengthOfProgression; i += 1) {
-    arrayOfProgression.push(startOfProgression + (stepOfProgression * i));
+    progression.push(startOfProgression + (stepOfProgression * i));
   }
 
-  return arrayOfProgression;
+  return progression;
 };
 
 const generateRound = () => {

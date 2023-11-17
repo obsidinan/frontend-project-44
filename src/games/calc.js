@@ -3,22 +3,22 @@ import runEngine from '../index.js';
 
 const rules = 'What is the result of the expression?';
 
-const expression = (operator, number1, number2) => {
+const generateExpression = (operator, number1, number2) => {
   switch (operator) {
     case '*':
-      return String(number1 * number2);
+      return number1 * number2;
     case '+':
-      return String(number1 + number2);
+      return number1 + number2;
     case '-':
-      return String(number1 - number2);
+      return number1 - number2;
     default:
-      return '0';
+      throw new Error('Unknown state!');
   }
 };
 
 const getOperator = () => {
-  const arrayOfOperations = ['*', '+', '-'];
-  const operator = arrayOfOperations[getRandomInRange(0, 2)];
+  const operationValues = ['*', '+', '-'];
+  const operator = operationValues[getRandomInRange(0, 2)];
   return operator;
 };
 
@@ -28,7 +28,7 @@ const generateRound = () => {
   const randomNum2 = getRandomInRange(1, 30);
 
   const question = `${randomNum1} ${operator} ${randomNum2}`;
-  const answer = expression(operator, randomNum1, randomNum2);
+  const answer = String(generateExpression(operator, randomNum1, randomNum2));
 
   return [question, answer];
 };
