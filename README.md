@@ -1,5 +1,3 @@
-проверка
-
 # Мой первый проект в Hexlet: 5 консольных игр
 ## Hexlet tests and linter status:
 [![Actions Status](https://github.com/obsidinan/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/obsidinan/frontend-project-44/actions)
